@@ -82,7 +82,7 @@
     <LibraryPath>C:\Users\小米\.conda\envs\idna\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\小米\.conda\envs\idna\lib\site-packages\torch\include;C:\Users\小米\.conda\envs\idna\include;G:\boost_1_85_0;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\小米\AppData\Roaming\Python\Python311\site-packages\pybind11\include;C:\Users\小米\.conda\envs\idna\include;G:\boost_1_85_0;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Users\小米\.conda\envs\idna\libs;G:\boost_1_85_0\stage\lib;$(LibraryPath)</LibraryPath>
     <TargetExt>.pyd</TargetExt>
     <TargetName>CoreBPE_cpp</TargetName>
