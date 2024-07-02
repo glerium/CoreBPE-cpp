@@ -48,11 +48,6 @@ CoreBPE::CoreBPE(std::unordered_map<std::string, Rank> encoder,
 
 }
 
-CoreBPE::CoreBPE() {
-	auto regex = boost::regex(R"((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|[0-9]{1,3}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s+(?!\S)|\s+)");
-	regex_tls = std::vector(MAX_NUM_THREADS, regex);
-}
-
 std::vector<CoreBPE::Rank> CoreBPE::encode(const std::string& text, const std::unordered_set<std::string>& allowed_special)
 {
 	//py::gil_scoped_release release_gil;

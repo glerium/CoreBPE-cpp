@@ -19,7 +19,6 @@ struct CoreBPE
 	CoreBPE(std::unordered_map<std::string, Rank> encoder,
 		std::unordered_map<std::string, Rank> special_tokens_encoder,
 		const std::string& pattern);
-	CoreBPE();
 
 	std::vector<Rank> encode(const std::string& text, const std::unordered_set<std::string>& allowed_special);
 	static std::vector<Rank> byte_pair_encode(const std::string& piece, const std::unordered_map<std::string, Rank>& ranks);
